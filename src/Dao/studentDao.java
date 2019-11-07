@@ -21,6 +21,7 @@ public class studentDao {
 			cl.setStudentId(rs.getInt("idStudent"));
 			cl.setStudentName(rs.getString("studentName"));
 			cl.setClassID(rs.getInt("idClass"));
+			cl.setPoint(rs.getDouble("point"));
 			list.add(cl);
 		}
 		
