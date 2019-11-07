@@ -17,7 +17,7 @@ public class graduateDao {
 		while(rs.next()) {
 			graduate grade = new graduate();
 			grade.setGraduateId(rs.getInt("idGraduate"));
-			grade.setGradureName(rs.getString("graduateName"));
+			grade.setGraduateName(rs.getString("graduateName"));
 			list.add(grade);
 		}
 		
