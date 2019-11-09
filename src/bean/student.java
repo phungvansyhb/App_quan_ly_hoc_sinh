@@ -4,8 +4,9 @@ public class student {
 	private int studentId;
 	private String studentName;
 	private int classID;
-	private double point;
-	
+	private double mathPoint;
+	private double physicPoint;
+	private double chemPoint;
 	public int getStudentId() {
 		return studentId;
 	}
@@ -24,10 +25,22 @@ public class student {
 	public void setClassID(int classID) {
 		this.classID = classID;
 	}
-	public double getPoint() {
-		return point;
+	public double getmathPoint() {
+		return mathPoint;
 	}
-	public void setPoint(double point) {
-		this.point = point;
+	public void setMathPoint(double point) {
+		this.mathPoint = point;
+	}
+	public double getPhysicPoint() {
+		return physicPoint;
+	}
+	public void setPhysicPoint(double physicPoint) {
+		this.physicPoint = physicPoint;
+	}
+	public double getChemPoint() {
+		return chemPoint;
+	}
+	public void setChemPoint(double chemPoint) {
+		this.chemPoint = chemPoint;
 	}
 }

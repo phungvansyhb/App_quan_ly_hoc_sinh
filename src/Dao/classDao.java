@@ -10,7 +10,7 @@ import java.util.List;
 import bean.classroom;
 
 public class classDao {
-	public List<classroom> getlistclass (Connection conn) throws SQLException{
+	public static List<classroom> getlistclass (Connection conn) throws SQLException{
 		List<classroom> list = new ArrayList<classroom>();
 		PreparedStatement pst = null;
 		String sql = "Select * From apptimhocsinh.class";
@@ -20,7 +20,6 @@ public class classDao {
 			 classroom cl = new classroom();
 			cl.setClassId(rs.getInt("idClass"));
 			cl.setClassName(rs.getString("className"));
-			cl.setGraduateId(rs.getInt("idGraduate"));
 			list.add(cl);
 		}
 		
